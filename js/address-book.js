@@ -20,6 +20,7 @@ function render(entries) {
     var book = $(".address-book");
 
     // Clear the address book
+    book.hide();
     book.empty();
 
     // Loop through each entry
@@ -37,6 +38,8 @@ function render(entries) {
         entry.removeClass("template");
         book.append(entry);
     });
+    
+    book.fadeIn(500);
 }
 
 /* sortObjArray()
